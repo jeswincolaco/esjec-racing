@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-brand-red: #dc2626;
+  --color-brand-silver: #94a3b8;
+  --color-brand-chrome: #f8fafc;
+  
+  /* Theme Variables */
+  --color-app-bg: var(--bg-primary);
+  --color-app-text: var(--text-primary);
+  --color-app-text-muted: var(--text-secondary);
+  --color-app-card: var(--bg-secondary);
+  --color-app-border: var(--border-primary);
+}
+
+@layer base {
+  :root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f1f5f9;
+    --text-primary: #0f172a;
+    --text-secondary: #64748b;
+    --border-primary: rgba(0, 0, 0, 0.1);
+    --glass-bg: rgba(255, 255, 255, 0.8);
+    --carbon-base: #f8fafc;
+  }
+
+  .dark {
+    --bg-primary: #050505;
+    --bg-secondary: #0f1012;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --border-primary: rgba(255, 255, 255, 0.08);
+    --glass-bg: rgba(15, 16, 18, 0.6);
+    --carbon-base: #0a0a0a;
+  }
+
+  body {
+    @apply bg-app-bg text-app-text font-sans antialiased selection:bg-brand-red/30 transition-colors duration-300;
+  }
+}
+
+@layer utilities {
+  .text-glow-red {
+    text-shadow: 0 0 10px rgba(220, 38, 38, 0.5), 0 0 20px rgba(220, 38, 38, 0.3);
+  }
+  .bg-glass {
+    @apply backdrop-blur-xl border border-app-border;
+    background: var(--glass-bg);
+  }
+  .bg-carbon {
+    background-color: var(--carbon-base);
+    background-image: 
+      linear-gradient(45deg, rgba(0,0,0,0.05) 25%, transparent 25%), 
+      linear-gradient(-45deg, rgba(0,0,0,0.05) 25%, transparent 25%), 
+      linear-gradient(45deg, transparent 75%, rgba(0,0,0,0.05) 75%), 
+      linear-gradient(-45deg, transparent 75%, rgba(0,0,0,0.05) 75%);
+    background-size: 8px 8px;
+    background-position: 0 0, 0 4px, 4px 4px, 4px 0;
+  }
+  .bg-tread {
+    background-image: repeating-linear-gradient(
+      135deg,
+      transparent,
+      transparent 10px,
+      rgba(0, 0, 0, 0.03) 10px,
+      rgba(0, 0, 0, 0.03) 20px
+    ),
+    repeating-linear-gradient(
+      -135deg,
+      transparent,
+      transparent 10px,
+      rgba(0, 0, 0, 0.03) 10px,
+      rgba(0, 0, 0, 0.03) 20px
+    );
+    background-size: 40px 40px;
+  }
+  .dark .bg-tread {
+    background-image: repeating-linear-gradient(
+      135deg,
+      transparent,
+      transparent 10px,
+      rgba(255, 255, 255, 0.02) 10px,
+      rgba(255, 255, 255, 0.02) 20px
+    ),
+    repeating-linear-gradient(
+      -135deg,
+      transparent,
+      transparent 10px,
+      rgba(255, 255, 255, 0.02) 10px,
+      rgba(255, 255, 255, 0.02) 20px
+    );
+  }
+  .racing-clip {
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+  }
+  .aerodynamic-card {
+    @apply border-l-4 border-brand-red transition-all duration-300;
+    position: relative;
+    overflow: hidden;
+  }
+  .aerodynamic-card::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 10%;
+    width: 2px;
+    height: 100px;
+    background: var(--color-brand-red);
+    transform: rotate(-90deg);
+    transform-origin: bottom center;
+    transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    opacity: 0;
+    z-index: 10;
+    pointer-events: none;
+  }
+  .aerodynamic-card:hover {
+    @apply border-l-8 border-brand-red -translate-y-1;
+    box-shadow: -10px 10px 30px rgba(220, 38, 38, 0.1);
+  }
+  .aerodynamic-card:hover::before {
+    transform: rotate(45deg);
+    opacity: 0.3;
+  }
+  .sheen-effect {
+    position: relative;
+    overflow: hidden;
+  }
+  .sheen-effect::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -100%;
+    width: 50%;
+    height: 200%;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.6) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    transform: rotate(30deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+    z-index: 20;
+  }
+  .sheen-effect:hover::after {
+    left: 150%;
+  }
+  .sheen-effect:hover {
+    filter: brightness(1.1);
+  }
+  .speed-glow:hover {
+    box-shadow: 0 0 25px rgba(220, 38, 38, 0.4), -5px 0 10px rgba(220, 38, 38, 0.2);
+  }
+
+  /* Flame Trail Effect */
+  .flame-trail:hover {
+    animation: flamePulse 0.4s ease-in-out infinite alternate;
+  }
+  @keyframes flamePulse {
+    from {
+      box-shadow: 0 0 10px rgba(220, 38, 38, 0.6), -5px 0 15px rgba(239, 68, 68, 0.4);
+    }
+    to {
+      box-shadow: 0 0 20px rgba(185, 28, 28, 0.8), -15px 0 25px rgba(248, 113, 113, 0.5);
+    }
+  }
+
+  /* Engine Rev Effect */
+  .engine-rev {
+    transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .engine-rev:hover {
+    transform: scale(1.05) translateY(-2px);
+    filter: brightness(1.1);
+    box-shadow: 0 10px 20px rgba(220, 38, 38, 0.2);
+  }
+  .engine-rev:active {
+    transform: scale(0.95);
+  }
+
+  /* Race Finish Line Hover */
+  .finish-line-hover:hover {
+    background-image: 
+      linear-gradient(45deg, #000 25%, transparent 25%), 
+      linear-gradient(-45deg, #000 25%, transparent 25%), 
+      linear-gradient(45deg, transparent 75%, #000 75%), 
+      linear-gradient(-45deg, transparent 75%, #000 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px 10px, 10px 0;
+  }
+
+  .member-card-glow {
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .member-card-glow:hover {
+    transform: scale(1.02) translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+  .dark .member-card-glow:hover {
+    box-shadow: 0 15px 30px rgba(220, 38, 38, 0.08);
+  }
+}
+
