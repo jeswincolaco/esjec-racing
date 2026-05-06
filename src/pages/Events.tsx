@@ -43,7 +43,7 @@ export default function Events() {
             <div className="space-y-6 max-w-2xl">
               <span className="px-4 py-1 bg-brand-red text-white text-[9px] font-black uppercase tracking-widest racing-clip">Next Checkpoint</span>
               <h2 className="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter">{eventsData[0].title}</h2>
-              <p className="text-chrome-silver font-medium text-lg line-clamp-2 md:line-clamp-none">{eventsData[0].description}</p>
+              <p className="text-brand-silver font-medium text-lg line-clamp-2 md:line-clamp-none">{eventsData[0].description}</p>
             </div>
             <button className="px-10 py-5 bg-white text-black text-xs font-black uppercase tracking-widest racing-clip hover:bg-brand-red hover:text-white transition-all flex items-center gap-2 shrink-0 shadow-2xl sheen-effect speed-glow flame-trail engine-rev">
               Sync Entry <ArrowUpRight size={18} />
