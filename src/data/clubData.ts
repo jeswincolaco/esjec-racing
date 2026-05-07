@@ -59,11 +59,11 @@ export const projectsData = [
 ];
 
 export const achievementsData = [
-  { id: "1", title: "AIR 8", category: "Rock Crawl", event: "BAJA 2020" },
-  { id: "2", title: "State Rank 3", category: "Overall", event: "BAJA 2020" },
-  { id: "3", title: "AIR 20", category: "Acceleration", event: "BAJA 2020" },
+  { id: "1", title: "Overall Champions", category: "Overall", event: "ATVC 2023" },
+  { id: "2", title: "AIR 8", category: "Rock Crawl", event: "BAJA 2020" },
+  { id: "3", title: "State Rank 3", category: "Overall", event: "BAJA 2020" },
   { id: "4", title: "AIR 11", category: "Endurance Race", event: "BAJA 2020" },
-  { id: "5", title: "AIR 24", category: "Sales Event", event: "BAJA 2020" },
+  { id: "5", title: "AIR 20", category: "Acceleration", event: "BAJA 2020" },
   { id: "6", title: "AIR 31", category: "Overall", event: "SAEINDIA BAJA 2020" }
 ];
 
@@ -101,6 +101,14 @@ export const eventsData = [
   },
   {
     id: "4",
+    title: "ATVC 2023 Championship",
+    date: "March 2023",
+    description: "Team eSJEC Racing emerged as Overall Champions in Pune, dominating technical inspections and the grueling endurance race against 34 teams nationwide.",
+    image: "/assets/images/esjec34.jpg",
+    type: "Competition"
+  },
+  {
+    id: "5",
     title: "BAJA 2020",
     date: "2020",
     description: "National level off-road racing competition with multiple achievements in Rock Crawl, Acceleration, and Endurance.",
@@ -133,5 +141,7 @@ export const galleryData = [
   { id: "13", url: "/assets/images/esjec22.jpg", caption: "Team eSJEC at Trinity Central School", category: "Events", tags: ["Udupi", "Teamwork"] },
   { id: "14", url: "/assets/images/esjec25.jpg", caption: "KPT Mangaluru Workshop Visit", category: "Events", tags: ["KPT", "Workshop"] },
   { id: "15", url: "/assets/images/esjec26.jpg", caption: "Sharing Engineering Ideologies", category: "Events", tags: ["KPT", "Engineering"] },
-  { id: "16", url: "/assets/images/esjec27.jpg", caption: "Technical Discussion with KPT Students", category: "Events", tags: ["KPT", "Technical"] }
+  { id: "16", url: "/assets/images/esjec27.jpg", caption: "Technical Discussion with KPT Students", category: "Events", tags: ["KPT", "Technical"] },
+  { id: "25", url: "/assets/images/esjec34.jpg", caption: "ATVC 2023 Champions Trophy", category: "Competition", tags: ["ATVC", "Championship"] },
+  { id: "26", url: "/assets/images/esjec35.jpg", caption: "Team eSJEC Celebrating Victory", category: "Competition", tags: ["ATVC", "Victory"] }
 ];

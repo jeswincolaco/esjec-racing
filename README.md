@@ -8,14 +8,15 @@ Official high-performance web platform for **Team eSJEC Racing**, the automotive
 
 Team eSJEC Racing is a multidisciplinary engineering team focused on designing, building, and testing off-road single-seater vehicles. Founded in March 2019, the team bridges the gap between classroom theory and track-ready execution, specializing in All-Terrain Vehicles (ATVs), Electric ATVs, and Go-Karts.
 
-## 🏆 Achievements (BAJA 2020)
+## 🏆 Major Achievements
+
+- **Overall Champions**: ATVC 2023 (Pune)
 
 - **AIR 8**: Rock Crawl
 - **State Rank 3**: Overall Performance
 - **AIR 11**: Endurance Race
 - **AIR 20**: Acceleration
-- **AIR 24**: Sales Event
-- **AIR 31**: SAEINDIA Overall
+- **AIR 31**: SAEINDIA Overall (2020)
 
 ## 🏎 Recent Seasons
 
