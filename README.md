@@ -15,6 +15,7 @@ Team eSJEC Racing is a multidisciplinary engineering team focused on designing, 
 - **AIR 2**: Overall Dynamic Award (BAJA 2021)
 - **AIR 2**: Maneuverability & Brake Performance (BAJA 2021)
 - **AIR 8**: Overall Ranking (BAJA 2021)
+- **AIR 16**: eBaja Preliminary Round (2020)
 - **AIR 7**: CAE Event (SAE BAJA 2023)
 - **AIR 11**: Design Event (SAE BAJA 2023)
 - **AIR 11**: Preliminary Round (SAE BAJA 2023)
