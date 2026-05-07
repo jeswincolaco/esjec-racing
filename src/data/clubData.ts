@@ -60,6 +60,8 @@ export const projectsData = [
 
 export const achievementsData = [
   { id: "1", title: "Overall Champions", category: "Overall", event: "ATVC 2023" },
+  { id: "7", title: "AIR 7", category: "CAE Event", event: "SAE BAJA 2023" },
+  { id: "8", title: "AIR 11", category: "Design Event", event: "SAE BAJA 2023" },
   { id: "2", title: "AIR 8", category: "Rock Crawl", event: "BAJA 2020" },
   { id: "3", title: "State Rank 3", category: "Overall", event: "BAJA 2020" },
   { id: "4", title: "AIR 11", category: "Endurance Race", event: "BAJA 2020" },
@@ -143,5 +145,6 @@ export const galleryData = [
   { id: "15", url: "/assets/images/esjec26.jpg", caption: "Sharing Engineering Ideologies", category: "Events", tags: ["KPT", "Engineering"] },
   { id: "16", url: "/assets/images/esjec27.jpg", caption: "Technical Discussion with KPT Students", category: "Events", tags: ["KPT", "Technical"] },
   { id: "25", url: "/assets/images/esjec34.jpg", caption: "ATVC 2023 Champions Trophy", category: "Competition", tags: ["ATVC", "Championship"] },
-  { id: "26", url: "/assets/images/esjec35.jpg", caption: "Team eSJEC Celebrating Victory", category: "Competition", tags: ["ATVC", "Victory"] }
+  { id: "26", url: "/assets/images/esjec35.jpg", caption: "Team eSJEC Celebrating Victory", category: "Competition", tags: ["ATVC", "Victory"] },
+  { id: "27", url: "/assets/images/esjec36.jpeg", caption: "SAE BAJA India 2023 Static Events", category: "Competition", tags: ["SAE", "Static"] }
 ];
