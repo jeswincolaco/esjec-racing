@@ -171,5 +171,6 @@ export const galleryData = [
   { id: "32", url: "/assets/images/esjec41.jpeg", caption: "Technical Refinement", category: "Workshop", tags: ["Engineering", "Design"] },
   { id: "33", url: "/assets/images/esjec42.jpeg", caption: "Team Spirit 2022", category: "Team", tags: ["Collaboration", "2022"] },
   { id: "34", url: "/assets/images/esjec43.jpeg", caption: "Season Reflection", category: "Competition", tags: ["Milestone", "Racing"] },
-  { id: "35", url: "/assets/images/esjec44.jpeg", caption: "Grateful for the ATVC Platform", category: "Competition", tags: ["ATVC", "Gratitude"] }
+  { id: "35", url: "/assets/images/esjec44.jpeg", caption: "Grateful for the ATVC Platform", category: "Competition", tags: ["ATVC", "Gratitude"] },
+  { id: "36", url: "/assets/images/esjec45.jpeg", caption: "Success in Preliminary Virtual Rounds", category: "Competition", tags: ["Virtual", "Success"] }
 ];
