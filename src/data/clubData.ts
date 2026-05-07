@@ -26,14 +26,22 @@ export const teamData = [
 export const projectsData = [
   {
     id: "1",
-    title: "Team SJEC Racing (ATV)",
-    description: "Designing, building, and testing off-road, single-seater All-Terrain Vehicles (ATVs).",
-    technologies: ["Design", "Fabrication", "Testing", "Off-Road"],
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800",
+    title: "BEETLE 7.0 (2026 Season)",
+    description: "Built with months of dedication and innovation, BEETLE 7.0 represents our collective effort in designing, manufacturing, and testing. It carried us through a season of growth and resilient engineering as we now step into 2027.",
+    technologies: ["Design", "Fabrication", "Testing", "Innovation", "Off-Road"],
+    image: "/assets/images/esjec1.jpg",
     status: "Active"
   },
   {
     id: "2",
+    title: "BEETLE 6.0 (2025 Season)",
+    description: "A reflection of immense hard work and dedication. While rankings varied, the invaluable experience and unwavering team spirit fostered during its development remain a major victory for Team eSJEC Racing.",
+    technologies: ["Chassis", "Powertrain", "Resilience", "Innovation"],
+    image: "/assets/images/esjec28.jpg",
+    status: "Active"
+  },
+  {
+    id: "3",
     title: "eSJEC Racing (Electric ATV)",
     description: "The electric vehicle division focusing on sustainable and high-performance electric off-road systems.",
     technologies: ["Electric Powertrain", "BMS", "Torque Control", "Sustainability"],
@@ -41,7 +49,7 @@ export const projectsData = [
     status: "Active"
   },
   {
-    id: "3",
+    id: "4",
     title: "Team ARTEMIS Racing (Go-Kart)",
     description: "Focused on high-speed track racing and precision engineering for Go-Kart competitions.",
     technologies: ["Aerodynamics", "Tuning", "Chassis Design", "Racing"],
@@ -61,7 +69,7 @@ export const achievementsData = [
 
 export const aboutData = {
   mission: "Focuses on designing, building, and testing off-road, single-seater vehicles to provide students with practical experience in engineering and project management.",
-  history: "Active since March 2019, the team has worked on multiple versions of cars, including Turtle-IV and Turtle-V.",
+  history: "Active since March 2019, the team has evolved through multiple iterations, most recently pioneering the BEETLE series with 6.0 and 7.0, pushing the boundaries of automotive engineering.",
   club: "Part of the SAEINDIA SJEC Collegiate Club, fostering knowledge in automotive technology.",
   membership: "Comprises students from Mechanical, Electrical & Electronics, Electronics & Communications, and Computer Science engineering departments."
 };
@@ -69,33 +77,61 @@ export const aboutData = {
 export const eventsData = [
   {
     id: "1",
+    title: "St Francis Xavier School Outreach",
+    date: "6 months ago",
+    description: "Students from Udyavara visited our workshop! We showcased our vehicle's key engineering systems: suspension, chassis, powertrain, and braking mechanisms.",
+    image: "/assets/images/esjec7.jpg",
+    type: "Outreach"
+  },
+  {
+    id: "2",
+    title: "Trinity Central School Tech Talk",
+    date: "6 months ago",
+    description: "An outreach session in Udupi sharing technical insights of our BAJA vehicle with bright 9th and 10th-grade students, focusing on design, fabrication, and motorsports.",
+    image: "/assets/images/esjec12.jpg",
+    type: "Technical"
+  },
+  {
+    id: "3",
+    title: "KPT Mangaluru Workshop Visit",
+    date: "8 months ago",
+    description: "Students from Karnataka (Govt.) Polytechnic visited our workshop to learn about our BAJA SAEINDIA experience, covering planning, development, manufacturing, and testing phases.",
+    image: "/assets/images/esjec25.jpg",
+    type: "Workshop"
+  },
+  {
+    id: "4",
     title: "BAJA 2020",
     date: "2020",
     description: "National level off-road racing competition with multiple achievements in Rock Crawl, Acceleration, and Endurance.",
     image: "https://images.unsplash.com/photo-1561144410-f19385bf5644?auto=format&fit=crop&q=80&w=800",
     type: "Competition"
-  },
-  {
-    id: "2",
-    title: "Virtual Design Showcases",
-    date: "Annual",
-    description: "Technical presentation of vehicle designs and performance simulations.",
-    image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800",
-    type: "Technical"
-  },
-  {
-    id: "3",
-    title: "Technical Performance Tests",
-    date: "Regular",
-    description: "Rigorous testing of vehicle components and overall system stability.",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=800",
-    type: "Testing"
   }
 ];
 
 export const galleryData = [
-  { id: "1", url: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800", caption: "ATV Off-road Testing", category: "Testing", tags: ["ATV", "Off-road"] },
-  { id: "2", url: "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&q=80&w=800", caption: "Electric Powertrain Setup", category: "Workshop", tags: ["Electric", "Engineering"] },
-  { id: "3", url: "https://images.unsplash.com/photo-1531746790731-6c4fd71ed3d?auto=format&fit=crop&q=80&w=800", caption: "Go-Kart Chassis Design", category: "Design", tags: ["ARTEMIS", "Racing"] },
-  { id: "4", url: "https://images.unsplash.com/photo-1561144410-f19385bf5644?auto=format&fit=crop&q=80&w=800", caption: "Team SJEC at BAJA 2020", category: "Events", tags: ["BAJA", "Team"] }
+  { id: "1", url: "/assets/images/esjec1.jpg", caption: "BEETLE 7.0 - 2026 Contender", category: "Testing", tags: ["BEETLE 7.0", "Off-road"] },
+  { id: "21", url: "/assets/images/esjec2.jpg", caption: "Designing BEETLE 7.0", category: "Design", tags: ["BEETLE 7.0", "Engineering"] },
+  { id: "22", url: "/assets/images/esjec3.jpg", caption: "Manufacturing Phase", category: "Workshop", tags: ["BEETLE 7.0", "Fabrication"] },
+  { id: "23", url: "/assets/images/esjec4.jpg", caption: "Rigorous Testing Sessions", category: "Testing", tags: ["BEETLE 7.0", "Performance"] },
+  { id: "24", url: "/assets/images/esjec5.jpg", caption: "Team eSJEC with BEETLE 7.0", category: "Workshop", tags: ["BEETLE 7.0", "Team"] },
+  { id: "2", url: "/assets/images/esjec28.jpg", caption: "BEETLE 6.0 Contender", category: "Workshop", tags: ["BEETLE 6.0", "Racing"] },
+  { id: "3", url: "/assets/images/esjec29.jpg", caption: "Developing BEETLE 6.0", category: "Design", tags: ["BEETLE 6.0", "Engineering"] },
+  { id: "17", url: "/assets/images/esjec30.jpg", caption: "Team Spirit and Dedication", category: "Workshop", tags: ["Team", "BEETLE 6.0"] },
+  { id: "18", url: "/assets/images/esjec31.jpg", caption: "Pushing Boundaries", category: "Testing", tags: ["BEETLE 6.0", "Innovation"] },
+  { id: "19", url: "/assets/images/esjec32.jpg", caption: "BEETLE 6.0 Technical Overview", category: "Workshop", tags: ["Technical", "BEETLE 6.0"] },
+  { id: "20", url: "/assets/images/esjec7.jpg", caption: "Workshop Visit - St Francis Xavier School", category: "Events", tags: ["Outreach", "Workshop"] },
+  { id: "4", url: "/assets/images/esjec8.jpg", caption: "Explaining the Chassis System", category: "Events", tags: ["Outreach", "Technical"] },
+  { id: "5", url: "/assets/images/esjec9.jpg", caption: "Suspension and Powertrain Demo", category: "Events", tags: ["Outreach", "Education"] },
+  { id: "6", url: "/assets/images/esjec10.jpg", caption: "Future Innovators at SJEC", category: "Events", tags: ["Outreach", "Students"] },
+  { id: "7", url: "/assets/images/esjec11.jpg", caption: "Team eSJEC with School Students", category: "Events", tags: ["Outreach", "Team"] },
+  { id: "8", url: "/assets/images/esjec12.jpg", caption: "Trinity Central School Outreach", category: "Events", tags: ["Udupi", "TechTalk"] },
+  { id: "9", url: "/assets/images/esjec14.jpg", caption: "Technical Presentation to Students", category: "Events", tags: ["Udupi", "Education"] },
+  { id: "10", url: "/assets/images/esjec16.jpg", caption: "Inspiring Future Innovators", category: "Events", tags: ["Udupi", "Motorsports"] },
+  { id: "11", url: "/assets/images/esjec18.jpg", caption: "Interactive Session with Students", category: "Events", tags: ["Udupi", "Engineering"] },
+  { id: "12", url: "/assets/images/esjec20.jpg", caption: "Vehicle Overview - Trinity School", category: "Events", tags: ["Udupi", "Design"] },
+  { id: "13", url: "/assets/images/esjec22.jpg", caption: "Team eSJEC at Trinity Central School", category: "Events", tags: ["Udupi", "Teamwork"] },
+  { id: "14", url: "/assets/images/esjec25.jpg", caption: "KPT Mangaluru Workshop Visit", category: "Events", tags: ["KPT", "Workshop"] },
+  { id: "15", url: "/assets/images/esjec26.jpg", caption: "Sharing Engineering Ideologies", category: "Events", tags: ["KPT", "Engineering"] },
+  { id: "16", url: "/assets/images/esjec27.jpg", caption: "Technical Discussion with KPT Students", category: "Events", tags: ["KPT", "Technical"] }
 ];

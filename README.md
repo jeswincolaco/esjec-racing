@@ -2,7 +2,7 @@
 
 Official high-performance web platform for **Team eSJEC Racing**, the automotive and robotics racing division of St Joseph Engineering College, Mangalore.
 
-![Project Preview](https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200)
+![Project Preview](public/assets/images/esjec5.jpg)
 
 ## 🚀 Overview
 
@@ -16,6 +16,21 @@ Team eSJEC Racing is a multidisciplinary engineering team focused on designing, 
 - **AIR 20**: Acceleration
 - **AIR 24**: Sales Event
 - **AIR 31**: SAEINDIA Overall
+
+## 🏎 Recent Seasons
+
+### BEETLE 7.0 (2026)
+The pinnacle of our 2026 journey, focusing on innovation, teamwork, and resilient engineering.
+
+### BEETLE 6.0 (2025)
+A contender that fostered unwavering team spirit and provided invaluable technical experience.
+
+## 🤝 Community & Outreach
+
+We actively engage with the next generation of engineers through:
+- **Technical Workshops**: Showcasing vehicle systems to schools and polytechnics.
+- **Skill Development**: Sharing BAJA SAEINDIA methodologies with regional engineering students.
+- **Inspiration**: Hosting tech talks for bright young innovators in Udupi and Mangaluru.
 
 ## 🛠 Tech Stack
 

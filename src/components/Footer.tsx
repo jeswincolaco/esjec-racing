@@ -9,8 +9,8 @@ export default function Footer() {
         {/* Brand */}
         <div className="space-y-6">
           <div className="flex items-center gap-2">
-            <div className="p-1 bg-brand-red racing-clip">
-              <Cpu className="w-6 h-6 text-white" />
+            <div className="p-1 bg-white rounded-md racing-clip">
+              <img src="/assets/images/esjec_logo.png" alt="eSJEC Racing" className="w-16 h-16 object-contain" />
             </div>
             <span className="text-2xl font-black tracking-tighter text-app-text uppercase italic">eSJEC Racing</span>
           </div>

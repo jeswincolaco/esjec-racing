@@ -71,8 +71,8 @@ export default function Home() {
           >
             <div className="relative z-10 p-4 rounded-3xl bg-glass border border-app-border overflow-hidden group">
               <img
-                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800"
-                alt="Robot Engineering"
+                src="/assets/images/esjec5.jpg"
+                alt="Team eSJEC Racing"
                 className="rounded-2xl transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-app-bg/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

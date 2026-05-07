@@ -59,10 +59,10 @@ export default function About() {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="p-10 bg-glass border-l-4 border-brand-silver space-y-6"
+            className="p-10 bg-glass aerodynamic-card space-y-6"
           >
-            <div className="w-14 h-14 bg-brand-silver/10 border border-brand-silver/20 rounded-lg flex items-center justify-center">
-              <History className="text-brand-silver" size={28} />
+            <div className="w-14 h-14 bg-brand-red/10 border border-brand-red/20 rounded-lg flex items-center justify-center">
+              <History className="text-brand-red" size={28} />
             </div>
             <h2 className="text-4xl font-black text-app-text uppercase italic tracking-tighter">Our History</h2>
             <p className="text-app-text-muted leading-relaxed font-medium">

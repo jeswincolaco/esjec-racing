@@ -43,8 +43,8 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <NavLink to="/" className="flex items-center gap-2 group">
-          <div className="p-2 bg-brand-red/10 rounded-lg group-hover:bg-brand-red/20 transition-colors">
-            <Cpu className="w-6 h-6 text-brand-red" />
+          <div className="p-1 bg-white/10 rounded-lg group-hover:bg-white/20 transition-colors">
+            <img src="/assets/images/esjec_logo.png" alt="eSJEC Racing Logo" className="w-12 h-12 md:w-14 md:h-14 object-contain" />
           </div>
           <span className="text-xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-brand-red to-brand-silver">
             eSJEC RACING
