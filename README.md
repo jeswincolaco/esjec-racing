@@ -13,6 +13,7 @@ Team eSJEC Racing is a multidisciplinary engineering team focused on designing, 
 - **Overall Champions**: ATVC 2023 (Pune)
 - **AIR 7**: CAE Event (SAE BAJA 2023)
 - **AIR 11**: Design Event (SAE BAJA 2023)
+- **AIR 11**: Preliminary Round (SAE BAJA 2023)
 
 - **AIR 8**: Rock Crawl
 - **State Rank 3**: Overall Performance
