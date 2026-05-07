@@ -60,6 +60,11 @@ export const projectsData = [
 
 export const achievementsData = [
   { id: "1", title: "Overall Champions", category: "Overall", event: "ATVC 2023" },
+  { id: "10", title: "AIR 1", category: "All Terrain Performance", event: "BAJA 2021" },
+  { id: "11", title: "AIR 2", category: "Overall Dynamic", event: "BAJA 2021" },
+  { id: "12", title: "AIR 2", category: "Maneuverability", event: "BAJA 2021" },
+  { id: "13", title: "AIR 2", category: "Brake Performance", event: "BAJA 2021" },
+  { id: "14", title: "AIR 8", category: "Overall Ranking", event: "BAJA 2021" },
   { id: "7", title: "AIR 7", category: "CAE Event", event: "SAE BAJA 2023" },
   { id: "8", title: "AIR 11", category: "Design Event", event: "SAE BAJA 2023" },
   { id: "9", title: "AIR 11", category: "Preliminary Round", event: "SAE BAJA 2023" },
@@ -172,5 +177,6 @@ export const galleryData = [
   { id: "33", url: "/assets/images/esjec42.jpeg", caption: "Team Spirit 2022", category: "Team", tags: ["Collaboration", "2022"] },
   { id: "34", url: "/assets/images/esjec43.jpeg", caption: "Season Reflection", category: "Competition", tags: ["Milestone", "Racing"] },
   { id: "35", url: "/assets/images/esjec44.jpeg", caption: "Grateful for the ATVC Platform", category: "Competition", tags: ["ATVC", "Gratitude"] },
-  { id: "36", url: "/assets/images/esjec45.jpeg", caption: "Success in Preliminary Virtual Rounds", category: "Competition", tags: ["Virtual", "Success"] }
+  { id: "36", url: "/assets/images/esjec45.jpeg", caption: "Success in Preliminary Virtual Rounds", category: "Competition", tags: ["Virtual", "Success"] },
+  { id: "37", url: "/assets/images/esjec46.jpeg", caption: "BAJA SAEINDIA 2021 Awards Ceremony", category: "Competition", tags: ["BAJA", "Awards"] }
 ];
