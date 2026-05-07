@@ -120,6 +120,14 @@ export const eventsData = [
   },
   {
     id: "6",
+    title: "Baja SAEIndia 2021-2022",
+    date: "2021-2022",
+    description: "A season of persistence and resilience. Despite numerous challenges, the team worked tirelessly through long nights in the workshop to bring our vehicle to life.",
+    image: "/assets/images/esjec39.jpeg",
+    type: "Competition"
+  },
+  {
+    id: "7",
     title: "BAJA 2020",
     date: "2020",
     description: "National level off-road racing competition with multiple achievements in Rock Crawl, Acceleration, and Endurance.",
@@ -157,5 +165,10 @@ export const galleryData = [
   { id: "26", url: "/assets/images/esjec35.jpg", caption: "Team eSJEC Celebrating Victory", category: "Competition", tags: ["ATVC", "Victory"] },
   { id: "27", url: "/assets/images/esjec36.jpeg", caption: "SAE BAJA India 2023 Static Events", category: "Competition", tags: ["SAE", "Static"] },
   { id: "28", url: "/assets/images/esjec37.jpeg", caption: "Celebrating Team Milestones 2024", category: "Team", tags: ["Victory", "Milestone"] },
-  { id: "29", url: "/assets/images/esjec38.jpeg", caption: "SAE BAJA 2023 Preliminary Round Success", category: "Competition", tags: ["SAE", "Preliminary"] }
+  { id: "29", url: "/assets/images/esjec38.jpeg", caption: "SAE BAJA 2023 Preliminary Round Success", category: "Competition", tags: ["SAE", "Preliminary"] },
+  { id: "30", url: "/assets/images/esjec39.jpeg", caption: "Baja SAEIndia 2021-2022 Contender", category: "Competition", tags: ["BAJA", "2022"] },
+  { id: "31", url: "/assets/images/esjec40.jpeg", caption: "Workshop Sessions - Late Night Build", category: "Workshop", tags: ["Fabrication", "Team"] },
+  { id: "32", url: "/assets/images/esjec41.jpeg", caption: "Technical Refinement", category: "Workshop", tags: ["Engineering", "Design"] },
+  { id: "33", url: "/assets/images/esjec42.jpeg", caption: "Team Spirit 2022", category: "Team", tags: ["Collaboration", "2022"] },
+  { id: "34", url: "/assets/images/esjec43.jpeg", caption: "Season Reflection", category: "Competition", tags: ["Milestone", "Racing"] }
 ];

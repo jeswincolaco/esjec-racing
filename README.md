@@ -29,6 +29,9 @@ The pinnacle of our 2026 journey, focusing on innovation, teamwork, and resilien
 ### BEETLE 6.0 (2025)
 A contender that fostered unwavering team spirit and provided invaluable technical experience.
 
+### Baja SAEIndia 2021-2022
+A journey of persistence, resilience, and countless workshop nights building our 2022 contender.
+
 ## 🤝 Community & Outreach
 
 We actively engage with the next generation of engineers through:
