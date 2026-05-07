@@ -86,32 +86,75 @@ export default function Home() {
 
       {/* Achievements Section */}
       <section className="py-24 px-6 bg-app-bg relative overflow-hidden">
-        <div className="max-w-7xl mx-auto space-y-16">
+        <div className="max-w-7xl mx-auto space-y-24">
           <div className="text-center space-y-4">
             <h2 className="text-[10px] font-black text-brand-red uppercase tracking-[0.4em]">Proven Performance</h2>
-            <h3 className="text-4xl md:text-6xl font-black text-app-text tracking-tighter uppercase italic">BAJA 2020 Hall of Fame</h3>
+            <h3 className="text-4xl md:text-6xl font-black text-app-text tracking-tighter uppercase italic text-glow">Championship Hall of Fame</h3>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {achievementsData.map((achievement, i) => (
-              <motion.div
-                key={achievement.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="p-8 bg-glass border border-app-border aerodynamic-card group hover:border-brand-red/40 transition-all"
-              >
-                <div className="flex justify-between items-start mb-4">
-                  <div className="p-3 bg-brand-red/10 rounded-lg group-hover:bg-brand-red transition-colors">
-                    <Award className="w-6 h-6 text-brand-red group-hover:text-white" />
-                  </div>
-                  <span className="text-[10px] font-black text-brand-silver uppercase tracking-widest">{achievement.event}</span>
-                </div>
-                <h4 className="text-4xl font-black text-app-text mb-2 tracking-tighter italic uppercase">{achievement.title}</h4>
-                <p className="text-app-text-muted font-bold text-sm uppercase tracking-widest">{achievement.category}</p>
-              </motion.div>
-            ))}
+          <div className="space-y-16">
+            {/* Major Highlights */}
+            <div className="space-y-8">
+              <div className="flex items-center gap-4">
+                <span className="text-2xl">🏆</span>
+                <h4 className="text-xl font-black text-app-text uppercase tracking-widest italic">Major Highlights</h4>
+                <div className="h-[1px] flex-grow bg-brand-red/20" />
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {achievementsData.filter(a => a.isHighlight).map((achievement, i) => (
+                  <motion.div
+                    key={achievement.id}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.1 }}
+                    className="p-8 bg-glass border border-brand-red/30 aerodynamic-card group hover:border-brand-red/60 transition-all relative overflow-hidden"
+                  >
+                    <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                      <Award size={80} className="text-brand-red" />
+                    </div>
+                    <div className="flex justify-between items-start mb-4">
+                      <div className="p-3 bg-brand-red/10 rounded-lg group-hover:bg-brand-red transition-colors">
+                        <Award className="w-6 h-6 text-brand-red group-hover:text-white" />
+                      </div>
+                      <span className="text-[10px] font-black text-brand-silver uppercase tracking-widest">{achievement.event}</span>
+                    </div>
+                    <h4 className="text-4xl font-black text-app-text mb-2 tracking-tighter italic uppercase">{achievement.title}</h4>
+                    <p className="text-app-text-muted font-bold text-sm uppercase tracking-widest">{achievement.category}</p>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+
+            {/* Year-wise Achievements */}
+            <div className="space-y-8">
+              <div className="flex items-center gap-4">
+                <span className="text-2xl">📊</span>
+                <h4 className="text-xl font-black text-app-text uppercase tracking-widest italic">Year-wise Achievements</h4>
+                <div className="h-[1px] flex-grow bg-app-border" />
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {achievementsData.filter(a => !a.isHighlight).map((achievement, i) => (
+                  <motion.div
+                    key={achievement.id}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: (i % 3) * 0.1 }}
+                    className="p-6 bg-glass border border-app-border aerodynamic-card group hover:border-brand-red/20 transition-all"
+                  >
+                    <div className="flex justify-between items-start mb-4">
+                      <div className="p-2 bg-app-card rounded-lg group-hover:bg-brand-red/10 transition-colors">
+                        <Award className="w-5 h-5 text-brand-silver group-hover:text-brand-red transition-colors" />
+                      </div>
+                      <span className="text-[10px] font-black text-brand-silver/60 uppercase tracking-widest group-hover:text-brand-silver transition-colors">{achievement.event}</span>
+                    </div>
+                    <h4 className="text-2xl font-black text-app-text mb-1 tracking-tighter italic uppercase group-hover:text-brand-red transition-colors">{achievement.title}</h4>
+                    <p className="text-app-text-muted font-bold text-[10px] uppercase tracking-widest">{achievement.category}</p>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -59,22 +59,26 @@ export const projectsData = [
 ];
 
 export const achievementsData = [
-  { id: "1", title: "Overall Champions", category: "Overall", event: "ATVC 2023" },
-  { id: "2", title: "AIR 5", category: "Overall Ranking", event: "ATVC 2020" },
-  { id: "3", title: "AIR 1", category: "All Terrain Performance", event: "BAJA 2021" },
-  { id: "4", title: "AIR 2", category: "Overall Dynamic", event: "BAJA 2021" },
-  { id: "5", title: "AIR 2", category: "Maneuverability", event: "BAJA 2021" },
-  { id: "6", title: "AIR 2", category: "Brake Performance", event: "BAJA 2021" },
-  { id: "7", title: "AIR 8", category: "Overall Ranking", event: "BAJA 2021" },
+  // Major Highlights
+  { id: "1", title: "Overall Champions", category: "Overall", event: "ATVC 2023", isHighlight: true },
+  { id: "12", title: "Hall of Fame", category: "Overall", event: "BAJA 2020", isHighlight: true },
+  
+  // Year-wise Achievements
+  { id: "2", title: "AIR 8", category: "Rock Crawl", event: "BAJA 2020" },
+  { id: "3", title: "State Rank 3", category: "Overall", event: "BAJA 2020" },
+  { id: "4", title: "AIR 11", category: "Endurance Race", event: "BAJA 2020" },
+  { id: "5", title: "AIR 20", category: "Acceleration", event: "BAJA 2020" },
+  { id: "6", title: "AIR 31", category: "Overall", event: "SAEINDIA BAJA 2020" },
   { id: "8", title: "AIR 16", category: "eBaja Preliminary", event: "SAEINDIA 2020" },
-  { id: "9", title: "AIR 7", category: "CAE Event", event: "SAE BAJA 2023" },
-  { id: "10", title: "AIR 11", category: "Design Event", event: "SAE BAJA 2023" },
-  { id: "11", title: "AIR 11", category: "Preliminary Round", event: "SAE BAJA 2023" },
-  { id: "12", title: "AIR 8", category: "Rock Crawl", event: "BAJA 2020" },
-  { id: "13", title: "State Rank 3", category: "Overall", event: "BAJA 2020" },
-  { id: "14", title: "AIR 11", category: "Endurance Race", event: "BAJA 2020" },
-  { id: "15", title: "AIR 20", category: "Acceleration", event: "BAJA 2020" },
-  { id: "16", title: "AIR 31", category: "Overall", event: "SAEINDIA BAJA 2020" }
+  { id: "7", title: "AIR 5", category: "Overall Ranking", event: "ATVC 2020" },
+  { id: "9", title: "AIR 1", category: "All Terrain Performance", event: "BAJA 2021" },
+  { id: "10", title: "AIR 2", category: "Overall Dynamic", event: "BAJA 2021" },
+  { id: "11", title: "AIR 2", category: "Maneuverability", event: "BAJA 2021" },
+  { id: "13", title: "AIR 2", category: "Brake Performance", event: "BAJA 2021" },
+  { id: "14", title: "AIR 8", category: "Overall Ranking", event: "BAJA 2021" },
+  { id: "15", title: "AIR 7", category: "CAE Event", event: "SAE BAJA 2023" },
+  { id: "16", title: "AIR 11", category: "Design Event", event: "SAE BAJA 2023" },
+  { id: "17", title: "AIR 11", category: "Preliminary Round", event: "SAE BAJA 2023" }
 ];
 
 export const aboutData = {
