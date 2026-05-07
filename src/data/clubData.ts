@@ -103,6 +103,14 @@ export const eventsData = [
   },
   {
     id: "4",
+    title: "Team Milestone Achievement",
+    date: "August 2024",
+    description: "Celebrating a major milestone reflecting our collective hard work and belief. A moment of gratitude to our team, college, and mentors for their tireless effort.",
+    image: "/assets/images/esjec37.jpeg",
+    type: "Achievement"
+  },
+  {
+    id: "5",
     title: "ATVC 2023 Championship",
     date: "March 2023",
     description: "Team eSJEC Racing emerged as Overall Champions in Pune, dominating technical inspections and the grueling endurance race against 34 teams nationwide.",
@@ -110,7 +118,7 @@ export const eventsData = [
     type: "Competition"
   },
   {
-    id: "5",
+    id: "6",
     title: "BAJA 2020",
     date: "2020",
     description: "National level off-road racing competition with multiple achievements in Rock Crawl, Acceleration, and Endurance.",
@@ -146,5 +154,6 @@ export const galleryData = [
   { id: "16", url: "/assets/images/esjec27.jpg", caption: "Technical Discussion with KPT Students", category: "Events", tags: ["KPT", "Technical"] },
   { id: "25", url: "/assets/images/esjec34.jpg", caption: "ATVC 2023 Champions Trophy", category: "Competition", tags: ["ATVC", "Championship"] },
   { id: "26", url: "/assets/images/esjec35.jpg", caption: "Team eSJEC Celebrating Victory", category: "Competition", tags: ["ATVC", "Victory"] },
-  { id: "27", url: "/assets/images/esjec36.jpeg", caption: "SAE BAJA India 2023 Static Events", category: "Competition", tags: ["SAE", "Static"] }
+  { id: "27", url: "/assets/images/esjec36.jpeg", caption: "SAE BAJA India 2023 Static Events", category: "Competition", tags: ["SAE", "Static"] },
+  { id: "28", url: "/assets/images/esjec37.jpeg", caption: "Celebrating Team Milestones 2024", category: "Team", tags: ["Victory", "Milestone"] }
 ];
