@@ -20,11 +20,10 @@ Team eSJEC Racing is a multidisciplinary engineering team focused on designing, 
 - **AIR 7**: CAE Event (SAE BAJA 2023)
 - **AIR 11**: Design Event (SAE BAJA 2023)
 - **AIR 11**: Preliminary Round (SAE BAJA 2023)
-
-- **AIR 8**: Rock Crawl
-- **State Rank 3**: Overall Performance
-- **AIR 11**: Endurance Race
-- **AIR 20**: Acceleration
+- **AIR 8**: Rock Crawl (BAJA 2020)
+- **State Rank 3**: Overall Performance (BAJA 2020)
+- **AIR 11**: Endurance Race (BAJA 2020)
+- **AIR 20**: Acceleration (BAJA 2020)
 - **AIR 31**: SAEINDIA Overall (2020)
 
 ## 🏎 Recent Seasons
