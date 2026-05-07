@@ -11,6 +11,7 @@ Team eSJEC Racing is a multidisciplinary engineering team focused on designing, 
 ## 🏆 Major Achievements
 
 - **Overall Champions**: ATVC 2023 (Pune)
+- **AIR 5**: Overall Ranking (ATVC 2020)
 - **AIR 1**: All Terrain Performance (BAJA 2021)
 - **AIR 2**: Overall Dynamic Award (BAJA 2021)
 - **AIR 2**: Maneuverability & Brake Performance (BAJA 2021)

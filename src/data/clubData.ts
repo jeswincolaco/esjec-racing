@@ -60,6 +60,7 @@ export const projectsData = [
 
 export const achievementsData = [
   { id: "1", title: "Overall Champions", category: "Overall", event: "ATVC 2023" },
+  { id: "16", title: "AIR 5", category: "Overall Ranking", event: "ATVC 2020" },
   { id: "10", title: "AIR 1", category: "All Terrain Performance", event: "BAJA 2021" },
   { id: "11", title: "AIR 2", category: "Overall Dynamic", event: "BAJA 2021" },
   { id: "12", title: "AIR 2", category: "Maneuverability", event: "BAJA 2021" },
@@ -125,6 +126,14 @@ export const eventsData = [
     type: "Competition"
   },
   {
+    id: "8",
+    title: "ATVC 2020",
+    date: "2020",
+    description: "A dominant year for the team, securing AIR 5 Overall with top finishes in Acceleration (5th), Endurance (5th), and Sledge Pull (6th).",
+    image: "/assets/images/esjec48.jpeg",
+    type: "Competition"
+  },
+  {
     id: "6",
     title: "Baja SAEIndia 2021-2022",
     date: "2021-2022",
@@ -180,5 +189,13 @@ export const galleryData = [
   { id: "35", url: "/assets/images/esjec44.jpeg", caption: "Grateful for the ATVC Platform", category: "Competition", tags: ["ATVC", "Gratitude"] },
   { id: "36", url: "/assets/images/esjec45.jpeg", caption: "Success in Preliminary Virtual Rounds", category: "Competition", tags: ["Virtual", "Success"] },
   { id: "37", url: "/assets/images/esjec46.jpeg", caption: "BAJA SAEINDIA 2021 Awards Ceremony", category: "Competition", tags: ["BAJA", "Awards"] },
-  { id: "38", url: "/assets/images/esjec47.jpeg", caption: "eBaja 2020 Preliminary Success", category: "Competition", tags: ["eBaja", "Virtual"] }
+  { id: "38", url: "/assets/images/esjec47.jpeg", caption: "eBaja 2020 Preliminary Success", category: "Competition", tags: ["eBaja", "Virtual"] },
+  { id: "39", url: "/assets/images/esjec48.jpeg", caption: "ATVC 2020 Performance", category: "Competition", tags: ["ATVC", "AIR 5"] },
+  { id: "40", url: "/assets/images/esjec49.jpeg", caption: "Acceleration Test - 5th Place", category: "Testing", tags: ["Speed", "Acceleration"] },
+  { id: "41", url: "/assets/images/esjec50.jpeg", caption: "Sledge Pull Challenge", category: "Testing", tags: ["Power", "Traction"] },
+  { id: "42", url: "/assets/images/esjec51.jpeg", caption: "Endurance Race - Top 5", category: "Testing", tags: ["Durability", "Racing"] },
+  { id: "43", url: "/assets/images/esjec52.jpeg", caption: "Vehicle Dynamics", category: "Design", tags: ["Technical", "Performance"] },
+  { id: "44", url: "/assets/images/esjec53.jpeg", caption: "Team SJEC at ATVC 2020", category: "Team", tags: ["Competition", "2020"] },
+  { id: "45", url: "/assets/images/esjec54.jpeg", caption: "Pit Lane Precision", category: "Workshop", tags: ["Maintenance", "Pit"] },
+  { id: "46", url: "/assets/images/esjec55.jpeg", caption: "Victory Lap ATVC 2020", category: "Competition", tags: ["Success", "Racing"] }
 ];
