@@ -1,38 +1,21 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, ZoomIn, Image as ImageIcon, Search, Filter } from 'lucide-react';
+import { X, ZoomIn, Image as ImageIcon, Search } from 'lucide-react';
 import { galleryData } from '../data/clubData';
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
-
-  const availableCategories = [...new Set(galleryData.map(item => (item as any).category as string))];
-
-  const toggleCategory = (category: string) => {
-    if (category === 'All') {
-      setSelectedCategories([]);
-      return;
-    }
-    setSelectedCategories(prev => 
-      prev.includes(category) 
-        ? prev.filter(c => c !== category) 
-        : [...prev, category]
-    );
-  };
 
   const filteredGallery = galleryData.filter(item => {
     const itemData = item as any;
-    const matchesCategory = selectedCategories.length === 0 || selectedCategories.includes(itemData.category);
-    
     const query = searchQuery.toLowerCase();
     const matchesSearch = query === '' || 
       item.caption.toLowerCase().includes(query) ||
       (itemData.tags && itemData.tags.some((tag: string) => tag.toLowerCase().includes(query))) ||
       (itemData.category && itemData.category.toLowerCase().includes(query));
     
-    return matchesCategory && matchesSearch;
+    return matchesSearch;
   });
 
   return (
@@ -54,10 +37,9 @@ export default function Gallery() {
       <div className="max-w-7xl mx-auto px-6 pt-20 space-y-12">
         
         {/* Controls Section */}
-        <div className="flex flex-col lg:flex-row gap-8 items-start lg:items-center justify-between bg-app-card/30 p-8 rounded-sm border border-app-border backdrop-blur-sm">
-          
+        <div className="bg-app-card/30 p-8 rounded-sm border border-app-border backdrop-blur-sm flex justify-center">
           {/* Search Bar */}
-          <div className="relative w-full lg:max-w-md group">
+          <div className="relative w-full max-w-2xl group">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-app-text-muted group-focus-within:text-brand-red transition-colors" size={18} />
             <input 
               type="text" 
@@ -66,37 +48,6 @@ export default function Gallery() {
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-12 pr-4 py-4 bg-app-bg border border-app-border text-app-text rounded-sm focus:outline-none focus:border-brand-red transition-all text-xs font-black uppercase tracking-widest"
             />
-          </div>
-
-          {/* Filter Controls */}
-          <div className="flex flex-wrap items-center gap-3">
-            <div className="flex items-center gap-2 text-app-text-muted mr-4">
-              <Filter size={16} className="text-brand-red" />
-              <span className="text-[10px] font-black uppercase tracking-widest italic">Filters</span>
-            </div>
-            <button
-              onClick={() => toggleCategory('All')}
-              className={`px-6 py-2.5 racing-clip text-[10px] font-black uppercase tracking-widest transition-all ${
-                selectedCategories.length === 0 
-                ? 'bg-brand-red text-white shadow-lg shadow-brand-red/20' 
-                : 'bg-app-bg border border-app-border text-app-text-muted hover:text-app-text'
-              }`}
-            >
-              All
-            </button>
-            {availableCategories.map((category) => (
-              <button
-                key={category}
-                onClick={() => toggleCategory(category)}
-                className={`px-6 py-2.5 racing-clip text-[10px] font-black uppercase tracking-widest transition-all ${
-                  selectedCategories.includes(category) 
-                  ? 'bg-brand-red text-white shadow-lg shadow-brand-red/20' 
-                  : 'bg-app-bg border border-app-border text-app-text-muted hover:text-app-text'
-                }`}
-              >
-                {category}
-              </button>
-            ))}
           </div>
         </div>
 
@@ -151,7 +102,7 @@ export default function Gallery() {
               <h3 className="text-2xl font-black text-app-text uppercase italic tracking-tighter">Negative Signal</h3>
               <p className="text-app-text-muted">No visual telemetry matches your current search parameters.</p>
               <button 
-                onClick={() => { setSelectedCategories([]); setSearchQuery(''); }}
+                onClick={() => setSearchQuery('')}
                 className="mt-6 px-8 py-3 bg-app-card border border-app-border text-app-text text-[10px] font-black uppercase tracking-widest hover:bg-brand-red hover:text-white hover:border-brand-red transition-all racing-clip"
               >
                 Reset Sensors

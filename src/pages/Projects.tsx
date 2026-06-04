@@ -5,14 +5,10 @@ import { projectsData } from '../data/clubData';
 
 export default function Projects() {
   const [statusFilter, setStatusFilter] = useState<'All' | 'Active'>('All');
-  const [tagFilter, setTagFilter] = useState<string>('All');
   const [searchQuery, setSearchQuery] = useState('');
-
-  const allTags = ['All', ...new Set(projectsData.flatMap(p => p.technologies))];
 
   const filteredProjects = projectsData.filter(project => {
     const matchesStatus = statusFilter === 'All' ? true : project.status === statusFilter;
-    const matchesTag = tagFilter === 'All' ? true : project.technologies.includes(tagFilter);
     
     const query = searchQuery.toLowerCase();
     const matchesSearch = query === '' || 
@@ -20,7 +16,7 @@ export default function Projects() {
       project.description.toLowerCase().includes(query) ||
       project.technologies.some(tech => tech.toLowerCase().includes(query));
 
-    return matchesStatus && matchesTag && matchesSearch;
+    return matchesStatus && matchesSearch;
   });
 
   return (
@@ -55,8 +51,7 @@ export default function Projects() {
             <div className="absolute bottom-0 left-0 h-0.5 bg-brand-red scale-x-0 group-focus-within:scale-x-100 transition-transform origin-left duration-500 w-full" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-8 border-t border-app-border/50">
-          <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-col items-center gap-4 pt-8 border-t border-app-border/50">
             <h3 className="text-[10px] font-black uppercase tracking-[0.3em] text-app-text-muted italic">Team State</h3>
             <div className="flex flex-wrap justify-center gap-2">
               {['All', 'Active'].map((status) => (
@@ -74,27 +69,6 @@ export default function Projects() {
               ))}
             </div>
           </div>
-
-          {/* Tag Filter */}
-          <div className="flex flex-col items-center gap-4">
-            <h3 className="text-[10px] font-black uppercase tracking-[0.3em] text-app-text-muted italic">Technical Telemetry</h3>
-            <div className="flex flex-wrap justify-center gap-2 max-w-3xl">
-              {allTags.map((tag) => (
-                <button
-                  key={tag}
-                  onClick={() => setTagFilter(tag)}
-                  className={`px-4 py-1.5 rounded-sm border text-[10px] font-black uppercase tracking-widest transition-all ${
-                    tagFilter === tag
-                    ? 'border-brand-silver bg-brand-silver/10 text-brand-silver'
-                    : 'border-app-border bg-app-card/50 text-app-text-muted hover:border-brand-silver/50 hover:text-app-text'
-                  }`}
-                >
-                  {tag}
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
       </div>
 
       {/* Projects List */}
@@ -164,7 +138,7 @@ export default function Projects() {
                 <h3 className="text-2xl font-black text-app-text uppercase italic tracking-tighter">No prototypes found</h3>
                 <p className="text-app-text-muted">Adjust your filters or search parameters to see more engineering telemetry.</p>
                 <button 
-                  onClick={() => { setStatusFilter('All'); setTagFilter('All'); setSearchQuery(''); }}
+                  onClick={() => { setStatusFilter('All'); setSearchQuery(''); }}
                   className="mt-6 px-8 py-3 bg-app-card border border-app-border text-app-text text-[10px] font-black uppercase tracking-widest hover:bg-brand-red hover:text-white hover:border-brand-red transition-all racing-clip"
                 >
                   Reset All Sensors

@@ -34,3 +34,7 @@ coverage/
 
 # Vite
 *.timestamp-*
+
+# Shared raw files
+ezgif-2e6b5d9b426495d5-jpg/
+
